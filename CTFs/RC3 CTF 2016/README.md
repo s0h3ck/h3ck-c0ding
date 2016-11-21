@@ -1,4 +1,4 @@
-# Qiwi-Infosec CTF 2016 writeup
+# RC3 CTF 2016 writeup
 
 ## Crypto 100
 Category: Crypto Points: 100 Solves: Description:
