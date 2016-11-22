@@ -147,7 +147,7 @@ file.close()
 
 At last, the dreadful part is to open the image and voilà!
 
-![alt text](https://github.com/s0h3ck/h3ck-c0ding/edit/master/CTFs/RC3%20CTF%202016/flag-crytpo400.png "RC3-2016-JAIP3GEZ")
+<img src="flag-crypto400.png" alt="RC3-2016-JAIP3GEZ" width="195" height="24"/>
 
 The flag is `=> RC3-2016-JAIP3GEZ`
 
