@@ -46,7 +46,7 @@ I did not have time to submit the flag, but here is my solution I was working on
 
 The challenge gave us a zipped file with [maze.db](maze.db) into it.
 
-First of all, I run `strings maze.db` which reveals useful information like `SQLite format 3`. Happy with it, I opened the database file with the command `sqlite3 maze.db`. Then, I run `.tables`. As a result, I got three tables: start, finish and the points tables. It's maze, so we start from id 1 and end at the end 2500. Each id has coordinate in x and y, a status either a wall or a gate and I value. The following show my investigation methodology in the terminal
+First of all, I run `strings maze.db` which reveals useful information like `SQLite format 3`. Happy with it, I opened the database file with the command `sqlite3 maze.db`. Then, I run `.tables`. As a result, I got three tables: start, finish and the points tables. It's maze, so we start from id 1 and end at the id 2500. Each id has coordinated in x and y, a status either a wall or a gate and a value. The following show my investigation methodology in the terminal
 
 ```sqlite3
 sqlite> .tables
@@ -86,7 +86,7 @@ sqlite> SELECT * from points;
 sqlite> .quit
 ```
 
-It looks like a maze 50 x 50 for a total of 2500 tiles. We start at the id of 1, coordinate (0,0) and the endpoint is at the id of 2500, coordinate (49,49). A clasic maze problem. Here is the write I wrote and the solve methods, I use the simple recursivity and A\* search from that [website](http://www.laurentluce.com/posts/solving-mazes-using-python-simple-recursivity-and-a-search/).
+It looks like a maze 50 x 50 for a total of 2500 tiles. We start at the id of 1, coordinate (0,0) and the endpoint is at the id of 2500, coordinate (49,49). A clasic maze problem. Here is the script I wrote. I use the simple recursivity and A\* search from that [website](http://www.laurentluce.com/posts/solving-mazes-using-python-simple-recursivity-and-a-search/).
 
 ```python
 #!/usr/bin/python2.7
