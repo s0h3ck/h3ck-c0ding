@@ -26,7 +26,7 @@ knock_knock_neo
 the_flag_is_the_third_line
 ```
 
-A story about Neo... so cool?! Yep, let's focus! The flag is the third line, which means, you will have to read between lines and find out that the flag is actually 
+A story about Neo... so cool?! Yep, let's focus! The flag is the third line, which means, you will have to read between lines.
 
 The flag is `=> follow_the_white_qabbit`
 
