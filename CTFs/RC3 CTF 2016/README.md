@@ -11,9 +11,9 @@
 > Cipher Text: 7sj-ighm-742q3w4t
 
 ## Write-up
-The idea behind this problem is to find out which cipher is. In each CTF, it's pretty common to have a subtitution cipher. No doubt, I though it would be the Caesar cipher, but the first half (almost each challenge) had `RC3-2016-` so, the substitution cipher must handle the number as well.
+The idea behind this problem is to find out which cipher is. In each CTF, it's pretty common to have a substitution cipher. No doubt, I thought it would be the Caesar cipher, but the first half (almost each challenge) had `RC3-2016-` so, the substitution cipher must handle the number as well.
 
-A slight modification of the standard Caesar cipher give us a equivalent to a right shift of 20.
+A slight modification of the standard Caesar cipher gives us an equivalent to a right shift of 20.
 
 ```text
 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -47,7 +47,7 @@ The flag is `=> RC3-2016-ANTIDERV`
 > Missing.
 
 ## Write-up
-The idea is to count the number of cats in each slide and then convert it to alphabetic letter and reverse it to get the flag.
+The idea is to count the number of cats in each slide and then convert it to alphabetic letters and reverse it to get the flag.
 
 ```text
 Image 1: 14 cats - N
@@ -84,7 +84,7 @@ Thanks @Neolex for giving me this suggestion.
 > HH0bAI>>AE&>IIAACMQa
 
 ## Write-up
-After hours of searching and trying and...  (╯°□°)╯︵ ┻━┻, I decided to note the first letter of each word 
+After hours of searching and trying and...  (╯°□°)╯︵ ┻━┻, I decided to note the first letter of each word. 
 
 > **L**etters **i**ntertwined  
 > **T**he **e**nd, **r**ecombined.  
@@ -100,7 +100,7 @@ After some digging on the Internet and old experience with pgm and ppm at my Uni
 ```text
 00111111 01001000 01001100 01001010 00110001 00111110 01000001 01000001 00100010 01000001 01001001 01001001 00111110 00111000 00111000 00111000 00100001 01000011 01000101 00111001 00111110 01000001 01000001 00111110 00100010 01111110 00111110 01001001 01001001 01000111 00111000 00111000 00111000 01000010 01000001 01000001 01111110 01000000 00111110 01100100 00111110 01000010 01111110 01000010 00111111 01001000 01001000 00110000 01100010 01000001 01001001 00111110 00111110 01000001 01000101 00100110 00111110 01001001 01001001 01000001 01000001 01000011 01001101 01010001 01100001
 ```
-Total of 65 characteres.
+Total of 65 characters
 
 Before we write a script in the format of pbm, we need to know the width and height of the bitmap. Above, the data give us 65 bytes, so the more appropriate way to represent it horizontally is to have 65 bits by 8 bits.
 
