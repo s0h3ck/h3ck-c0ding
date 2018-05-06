@@ -13,10 +13,10 @@ The idea is to write a decrypt function. The logic to encrypt the data is given 
 
 Here is the logic:
 ```
-00 -> 001
-01 -> 010
-10 -> 100
-11 -> 111
+00 -> 000
+01 -> 011
+10 -> 101
+11 -> 110
 ```
 
 We know that each flag starts with 'ASIS', so we could get the minimum layer of encryption `1000001010100110100100101010011`.
