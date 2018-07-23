@@ -165,7 +165,7 @@ for layer in range(0, length_values-1):
                 pass
 ```
 
-Finally, we add the code designed above to solve the challenge. Here is the code used for the CTF.
+Finally, we add the code designed above to solve the challenge. Here is the [code](./plusminus_ctf.py) used for the CTF.
 
 The flag is `=> ctfzone{DCF58FFDDA7CE9F0EA0D93C0E030FC06}`
 
