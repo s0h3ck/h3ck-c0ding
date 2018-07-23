@@ -120,9 +120,9 @@ for i in product(operators, repeat=number_of_space):
         pass
 ```
 
-The code merge together.
+The code all together.
 
-```
+```python
 from itertools import product
 from itertools import combinations
 
@@ -167,15 +167,14 @@ for layer in range(0, length_values-1):
 
 Finally, we add the code designed above to solve the challenge. Here is the code used for the CTF.
 
-The flag is `=> `ctfzone{DCF58FFDDA7CE9F0EA0D93C0E030FC06}
+The flag is `=> ctfzone{DCF58FFDDA7CE9F0EA0D93C0E030FC06}`
 
 ## Notes
-- The solution is not perfect. For example, if you look carefully the first demonstration, the script compute outside parentheses before inside parentheses. This is a waste of energy.
+- The solution is not perfect. For example, if you look carefully the first demonstration, the script computes outside parentheses before inside parentheses. This is a waste of energy.
 
 ```
 (1*2*3) = 6
 1+(2+3) = 6
-1*(2*3) = 6
 ```
 
 - Probably, thinking in term of trees and tuples ;)
