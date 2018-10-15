@@ -1,6 +1,6 @@
 # [CSE Puzzle Challenge - Puzzle 3](https://www.cse-cst.gc.ca/en/puzzles-enigmes/puzzle-enigme-3)
 
-The challenge is quite fun and can drive you crazy quite easily if you don't take the time to test every simple possibilities first.
+The challenge is quite fun and can drive you crazy quite easily if you don't take the time to test every simple possibility first.
 
 The solution is already [here](https://www.cse-cst.gc.ca/en/puzzles-enigmes/puzzle-enigme-3-solution), but the knightDecoding.py is not released yet (2018-10-24).
 
