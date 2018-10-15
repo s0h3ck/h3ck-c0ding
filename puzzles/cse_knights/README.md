@@ -6,11 +6,12 @@ The solution is already [here](https://www.cse-cst.gc.ca/en/puzzles-enigmes/puzz
 
 I didn't solve it entirely, because I had university, but friends of mine asked me how I did the first part.
 
-Here is one way of doing it with my knightDecoding.py version [](/knights.py) using [pillow](https://pillow.readthedocs.io/) in Python.
+Here is one way of doing it with my [knightDecoding.py](./knights.py) version using [pillow](https://pillow.readthedocs.io/) in Python.
 
 ## The story
-The first part is quite easy when you think about it. There are four knights directions. It has to be translated to something understandable by human like us. Let's try base 4.
-Mathematically, there are 24 possibilities, and because there is no way to tell if direction (BACK, FRONT, RIGHT, LEFT) has the value 0 or 1 or 2 or 3, bruteforce must come to the rescue.
+The first part is quite easy when you think about it. There are four knights directions. It has to be translated to something understandable by human like us. Let's try base 4.  
+
+Mathematically, there are 24 possibilities, and because there is no way to tell if direction (BACK, FRONT, RIGHT, LEFT) has the value 0, 1, 2 or 3, then bruteforce must come to the rescue.
 
 Using the script above, you end up with the following message:
 
@@ -46,7 +47,11 @@ Archive:  knights.zip
 ```
 
 ## Mistakes I did
-Never assume something. Since, I didn't know which values go to which directions, I assumed that BACK (or UP) = 0, FRONT (or DOWN) = 1, RIGHT = 2, LEFT = 3 assuming cardinality directions encoding such that north, south, east and west were respectively 0, 1, 2, 3. It will give: `´·²¹EHE»´·EEE¹E±¹E¸pEwyOv¥t¥vµOw¦tµvOµ{Owv´O¥{Oz¥tOv¶xE»ENENEuEvE½Eµ··~zA»¯BEE`. That is not smart at all. Instead, test every possibilities.
+Never assume something. Since, I didn't know which values go to which directions, I assumed that BACK (or UP) = 0, FRONT (or DOWN) = 1, RIGHT = 2, LEFT = 3 assuming cardinality directions encoding such that north, south, east and west were respectively 0, 1, 2, 3.  
+
+It will give: `´·²¹EHE»´·EEE¹E±¹E¸pEwyOv¥t¥vµOw¦tµvOµ{Owv´O¥{Oz¥tOv¶xE»ENENEuEvE½Eµ··~zA»¯BEE`.
+
+That is not smart at all. Instead, test every possibilities.
 
 ## Last words
 Thanks CSE! Good job! ;o
